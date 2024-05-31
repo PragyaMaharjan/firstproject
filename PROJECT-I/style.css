@@ -1,0 +1,249 @@
+*::after,::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 100px;
+    background-color: rgb(235, 231, 231);
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+  
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(44, 42, 42);
+    padding: 0 10px;
+    position: relative; 
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18px;
+    transition: 0.5s;
+    
+}
+ul li a:hover::after{
+    width: 100%;
+
+}
+
+.nav .logo h1{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(215, 157, 157);
+    
+
+}
+
+
+
+.nav .logo b{
+    color: rgb(160, 109, 42);
+
+}
+.nav ul{
+display: flex;
+list-style:none ;
+}
+
+.nav ul li a{
+    margin-right: 30px;
+    color: rgb(106, 29, 29);
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color:rgb(62, 4, 11) ;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+input{
+    padding: 10px 20px ;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.signup{
+    background: transparent;
+    border: none;
+}
+
+.login{
+    background-color: rgb(240, 188, 122);
+    color: rgb(253, 236, 216);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap:30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .content-left{
+    display:block;
+    width:100%
+}
+
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+
+}
+.content .content-left .info p{
+    font-size: 23px;
+    line-height: 2pc;
+    margin-bottom:30px ;
+    font-family: sans-serif;
+}
+
+.content .content-left button{
+    padding: 10px 23px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    user-select: none;
+    animation: rotate 10s linear infinite;
+    border-radius: 500px;
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.category{
+    width: 100;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.category .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+}
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(155, 141, 141);
+    outline: 2px solid red;
+    
+}
+
+.category .card-list .card img{
+    width: 140px;
+    height: auto;
+    bottom: 160px;
+    left: 40px;
+    bottom: 168px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow:sandybrown ;
+    border-radius: 50%;
+
+}
+
+.category .card-list .card .food-title{
+    padding:10px 0 10px 10px;
+}
+
+
+
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.category .card .desc-food p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

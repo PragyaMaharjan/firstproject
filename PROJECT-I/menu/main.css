@@ -1,0 +1,112 @@
+
+body{
+    background-color: rgb(220, 209, 195);
+}
+
+h2{
+    color: rgb(16, 15, 15);
+    text-align: center;
+    font-size: 35px;
+    line-height: 2pc;
+    margin-bottom:30px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.categories{
+    padding: 4% 0;
+    margin-top: -8%;
+}
+
+
+.box-3{
+   position: absolute;
+   bottom: 50%;
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+.img-responsive{
+    width: 100%;
+}
+
+.float-container{
+    position: relative;
+    left: 17%;
+    
+}
+
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left:40%;
+}
+.text-white{
+    color: rgb(230, 222, 214);
+}
+h3{
+    font-size: 1.7rem;
+}
+
+.img-rotate{
+    border-radius: 60%;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin-top: -1%;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+   
+  
+}
+
+ul li a{
+   
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(44, 42, 42);
+    padding: 0 10px;
+    position: relative; 
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18px;
+    transition: 0.5s;
+    
+}
+ul li a:hover::after{
+    width: 100%;
+
+}
+
+.nav .logo h1{
+    position: relative;
+    left: 10%;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(215, 157, 157);
+    
+
+}
+
+
+
+.nav .logo b{
+    color: rgb(160, 109, 42);
+
+}

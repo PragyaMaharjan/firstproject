@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(240, 230, 218);
+}
+
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.nav{
+    position: relative;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    
+  
+}
+
+ul li a{
+   
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(44, 42, 42);
+    padding: 0 10px;
+    position: relative; 
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18px;
+    transition: 0.5s;
+    
+}
+ul li a:hover::after{
+    width: 100%;
+
+}
+
+.nav .logo h1{
+    position: relative;
+    left: 10%;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(215, 157, 157);
+    
+
+}
+
+
+
+.nav .logo b{
+    color: rgb(160, 109, 42);
+
+}
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="nav">
+            <div class="logo"><h1>SAGAN CHHEN</h1> </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./menu/menu2.html">Menu</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
+            
+            <li><a href="./contactus.html">Contact</a></li>
+        </ul>
+        <!-- <div>
+            <a href="signin/signup.html">
+            <input class="signup"  type="submit" value="Sign Up" name="signup" ></a>
+            <a href="signin/login.html">
+            <input class="login" type="submit" value="Login" name="login"></a>
+
+        </div> -->
+        </div>
+    </section>
+
+    <div class="card">
+        <div class="img-box">
+        <img src="./images/bg.jpg" class="card-img" width="500px" height="600px">
+        </div>
+        <div class="card-info">
+            <h1 class="card-title"> SAGAN CHHEN</h1>
+            <div class="card-social-box">
+                <a href="https://www.instagram.com/sagan_chhen/" class="card-social-link">
+                    <img src="./images/insta.jpg" class="social-img">
+                </a>
+    
+                <a href="https://www.facebook.com/sagachhen" class="card-social-link"> <img src="./images/gmail.jpg" class="social-img"></a>
+                <a href="" class="card-social-link"> <img src="./images/fb.jpg" class="social-img"></a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing:border-box;
+        font-family: sans-serif;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: rgb(235, 231, 231);;
+    }
+    
+.social-img{
+        width:40px;
+        height: 40px;
+        display: block;
+    }
+    .card{
+        position: relative;
+        right: 8%;
+        top: 4%;
+        cursor: pointer;
+        margin-top: 5%;
+        width:500px ;
+        height: 550px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10%;
+       
+       
+    }
+    .card-img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .card-info{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  rgba(255, 255, 255,0.8s);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateY(100%);
+        transition: transform 0.8s ease;
+    }
+    .card-social-box{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card-title{
+          color:#e5e2e8;
+    }
+    .card:hover .card-info{
+transform: translateY(0%);
+    }
+    .nav{
+    position: relative;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin-bottom: 110%;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    left: 180%;
+  
+}
+
+ul li a{
+   
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(44, 42, 42);
+    padding: 0 10px;
+    position: relative; 
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18px;
+    transition: 0.5s;
+    
+}
+ul li a:hover::after{
+    width: 100%;
+
+}
+
+.nav .logo h1{
+    position: relative;
+    left: 10%;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(215, 157, 157);
+    
+
+}
+
+
+
+.nav .logo b{
+    color: rgb(160, 109, 42);
+
+}
+/* .nav ul{
+display: flex;
+list-style:none ;
+
+}
+
+.nav ul li a{
+    margin-right: 30px;
+    color: rgb(106, 29, 29);
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color:rgb(62, 4, 11) ;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+} */
+
+
+
+
+</style>
